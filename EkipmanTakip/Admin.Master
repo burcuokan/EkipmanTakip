@@ -1,0 +1,140 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="EkipmanTakip.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+     <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+     <!-- Your Custom CSS -->
+    <link href="/Content/style.css" rel="stylesheet" />
+
+     <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Admin Paneli</h3>
+                    <strong>BS</strong>
+                </div>
+               
+               <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="glyphicon glyphicon-user"></i>
+                        Kullanıcı Listesi
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li><a href="Default.aspx"><i class="glyphicon glyphicon-list"></i>Kullanıcı Listesi</a></li>
+                        <li><a href="KullaniciEkle.aspx"><i class="glyphicon glyphicon-adjust"></i>Kullanıcı Ekle</a></li>
+                    </ul>
+                </li>
+               
+                    <li class="active">
+                    <a href="#homeSubmenu3" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        Ekipman Yönetimi
+                        </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu3">
+                        <li><a href="EkipmanYönetimi.aspx"><i class="glyphicon glyphicon-list"></i>Ekipman Listesi</a></li>
+                        <li><a href="EkipmanEkle.aspx"><i class="glyphicon glyphicon-adjust"></i>Ekipman Ekle</a></li>
+                    </ul>
+                </li>
+                
+                    <li class="active">
+                    <a href="#homeSubmenu2" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="glyphicon glyphicon-inbox"></i>
+                        Zimmet Yönetimi
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu2">
+                        <li><a href="ZimmetListesi.aspx"><i class="glyphicon glyphicon-list"></i>Zimmet Listesi</a></li>
+                        <li><a href="ZimmetEkle.aspx"><i class="glyphicon glyphicon-adjust"></i>Zimmet Ekle</a></li>
+                    </ul>
+                </li>
+                
+                   <li class="active">
+                    <a href="#homeSubmenu4" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="glyphicon glyphicon-folder-open"></i>
+                        Kategoriler
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu4">
+                        <li><a href="KategoriListesi.aspx"><i class="glyphicon glyphicon-list"></i>Kategori Listesi</a></li>
+                        <li><a href="KategoriEkle.aspx"><i class="glyphicon glyphicon-adjust"></i>Kategori Ekle</a></li>
+                    </ul>
+                </li>
+
+                    <li>
+                    <a href="Grafikler.aspx">
+                        <i class="glyphicon glyphicon-dashboard"></i>
+                        Grafikler
+                    </a>
+                      </li>
+     
+                <li>
+                    <a href="İstatistikler.aspx">
+                        <i class="glyphicon glyphicon-stats"></i>
+                        İstatistikler
+                    </a>
+                </li>
+
+                   <li>
+                    <a href="TalepListesi.aspx">
+                        <i class="glyphicon glyphicon-stats"></i>
+                        Gelen Ekipman Talebi
+                    </a>
+                </li>
+                
+                    <li>
+                    <a href="Ayarlar.aspx">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        Ayarlar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="AdminÇıkış.aspx">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                        Çıkış Yap
+                    </a>
+                </li>
+            </ul>               
+            </nav>
+            
+            <!-- Page Content  -->
+        <div style="min-height: 100vh; width: 100%; padding: 20px 20px 0 20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+
+   <!-- jQuery ve Bootstrap JS (kapanış tag'ından önce de olabilir) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+     </script>
+
+</body>
+</html>
+
+

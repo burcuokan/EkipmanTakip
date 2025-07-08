@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="EkipmanTakip.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Bootstrap 3 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+     <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+     <!-- Your Custom CSS -->
+ <%--   <link href="/Content/style.css" rel="stylesheet" />--%>
+    <link href="Content/StyleSheet1.css" rel="stylesheet" />
+
+     <!-- Font Awesome CSS (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <form id="form1" runat="server">
+       
+        <div class="wrapper">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>Kullanıcı Paneli</h3>
+                    <strong>BS</strong>
+                </div>
+               
+               <ul class="list-unstyled components">    
+                   
+                    <li>
+                    <a href="KullaniciDefault.aspx">
+                        <i class="glyphicon glyphicon-home"></i>
+                        Profilim
+                    </a>
+                      </li>
+               
+                    <li class="active">
+                    <a href="Ekipmanlar.aspx">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        Ekipmanlarım
+                        </a>
+                </li>
+                
+                    <li class="active">
+                    <a href="EkipmanTalebi.aspx">
+                        <i class="glyphicon glyphicon-inbox"></i>
+                        Ekipman Talebi
+                    </a>
+                      
+                </li>          
+                   
+                    <li class="active">
+                    <a href="TalepDurumları.aspx">
+                        <i class="glyphicon glyphicon-retweet"></i>
+                        Talep Durumları
+                    </a>
+                            
+                </li>              
+                              
+                    <li>
+                    <a href="KullaniciAyarlar.aspx">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        Ayarlar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="KullaniciÇıkış.aspx">
+                        <i class="glyphicon glyphicon-eye-close"></i>
+                        Çıkış Yap
+                    </a>
+                </li>
+            </ul>               
+            </nav>
+            
+            <!-- Page Content  -->
+        <div style="min-height: 100vh; width: 100%; padding: 20px 20px 0 20px;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+    </form>
+
+   <!-- jQuery ve Bootstrap JS (kapanış tag'ından önce de olabilir) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+     <script type="text/javascript">
+         $(document).ready(function () {
+             $('#sidebarCollapse').on('click', function () {
+                 $('#sidebar').toggleClass('active');
+             });
+         });
+     </script>
+
+</body>
+</html>
+
+
