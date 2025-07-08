@@ -2,7 +2,7 @@
 
 Bu proje, ASP.NET kullanılarak geliştirilmiştir. Proje, admin ve kullanıcı modüllerinden oluşmaktadır. Admin panelinde kullanıcı listesi, ekipman yönetimi, zimmet yönetimi, kategoriler, grafikler, istatistikler, gelen ekipman talebi, ayarlar ve çıkış yap modülleri bulunmaktadır. Kullanıcı panelinde ise profilim, ekipmanlarım, ekipman talebi, talep durumları, ayarlar ve çıkış yap modülleri yer almaktadır.
 
-**Admin Paneli
+**Admin Paneli**
 ---
 
 ✍️ **Kayıt Ol Paneli**
