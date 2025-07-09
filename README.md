@@ -108,3 +108,18 @@ Grafikler modülünde dört farklı grafik bulunmaktadır:
 ---
 
 • Çıkış Yap modülünde, kullanıcı çıkış yaparak tekrar giriş paneline yönlendirilir.
+
+ 📌 **Projede Kullanılan Teknolojiler**
+--
+
+✅ Asp.Net
+
+✅ C#
+
+✅ Microsoft SQL Server
+
+✅ İlişkili Tablolar ve Prosedürler
+
+✅ HTML - CSS
+
+✅ Bootstrap
